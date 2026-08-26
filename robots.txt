@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dronebug.vercel.app/sitemap.xml
