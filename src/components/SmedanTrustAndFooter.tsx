@@ -1,28 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CopySimple } from '@phosphor-icons/react';
-import { toast } from 'sonner';
 import { BRAND, FAQS, SOCIAL_LINKS } from '../data/dronebugData';
 
 export default function SmedanTrustAndFooter({ onOpenSMEDAN }: { onOpenSMEDAN: () => void }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const handleShare = async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: BRAND.name,
-          text: `Check out ${BRAND.name} for tech solutions`,
-          url: BRAND.shareUrl,
-        });
-      } else {
-        await navigator.clipboard.writeText(BRAND.shareUrl);
-        toast.success('Link copied to clipboard!');
-      }
-    } catch {
-      // User cancelled or share failed silently
-    }
-  };
 
   return (
     <section id="contact" className="relative py-24 sm:py-32 px-6">
@@ -165,14 +146,6 @@ export default function SmedanTrustAndFooter({ onOpenSMEDAN }: { onOpenSMEDAN: (
               </span>
             </div>
             <div className="flex items-center gap-4">
-              <button
-                onClick={handleShare}
-                className="flex items-center gap-1.5 text-sm text-zinc-500 dark:text-zinc-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
-                aria-label="Share"
-              >
-                <CopySimple size={16} />
-                Share
-              </button>
               <a
                 href={BRAND.gmailComposeUrl}
                 target="_blank"

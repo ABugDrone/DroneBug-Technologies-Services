@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Moon, Sun, List, X, ShieldCheck, CaretDown, CopySimple, CheckCircle } from '@phosphor-icons/react';
-import { toast } from 'sonner';
-import { BRAND, SOCIAL_LINKS } from '../data/dronebugData';
+import { Moon, Sun, List, X, ShieldCheck } from '@phosphor-icons/react';
+import { BRAND } from '../data/dronebugData';
 
 export default function Navbar({
   onOpenSMEDAN,
@@ -18,24 +17,7 @@ export default function Navbar({
   onOpenPayment: () => void;
 }) {
     const [mobileOpen, setMobileOpen] = useState(false);
-  
-  const handleShare = async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: BRAND.name,
-          text: `Check out ${BRAND.name} for tech solutions`,
-          url: BRAND.shareUrl,
-        });
-      } else {
-        await navigator.clipboard.writeText(BRAND.shareUrl);
-        toast.success('Link copied to clipboard!');
-      }
-    } catch {
-      // User cancelled or share failed silently
-    }
-  };
-  
+
   const navLinks = [
     { label: 'Solutions', href: '#solutions' },
     { label: 'Pricing', href: '#pricing' },
@@ -95,15 +77,6 @@ export default function Navbar({
               aria-label="Toggle theme"
             >
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
-
-            <button
-              onClick={handleShare}
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-zinc-600 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
-              aria-label="Share"
-            >
-              <CopySimple size={14} />
-              Share
             </button>
 
             <button
