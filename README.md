@@ -2,12 +2,12 @@
 
 > Lightweight desktop tools, AI-powered software, and expert tech consultancy — helping Nigerian businesses save money and grow faster.
 
-[![Live](https://img.shields.io/badge/live-dronebug.vercel.app-0ea5e9?style=for-the-badge)](https://dronebug.vercel.app)
-[![SMEDAN Verified](https://img.shields.io/badge/SMEDAN-Verified-10b981?style=for-the-badge)](https://dronebug.vercel.app)
+[![Live](https://img.shields.io/badge/live-dronebugtech.shop-0ea5e9?style=for-the-badge)](https://dronebug.vercel.app)
+[![SMEDAN Verified](https://img.shields.io/badge/SMEDAN-Verified-10b981?style=for-the-badge)](https://dronebugtech.shop)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646cff?logo=vite)](https://vitejs.dev)
 [![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev)
 
-**Live site:** https://dronebug.vercel.app  
+**Live site:** https://dronebugtech.shop 
 **Previous host:** https://c23e91e1.mydala.app (Dala)  
 **Repository:** https://github.com/ABugDrone/DroneBug-Technologies-Services
 
