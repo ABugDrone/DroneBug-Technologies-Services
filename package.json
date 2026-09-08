@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "DroneBug Technologies & Services — Official website. Lightweight desktop tools, AI-powered software, and tech consultancy for Nigerian businesses.",
-  "homepage": "https://dronebug.vercel.app",
+  "description": "DroneBug Technologies & Services — SMEDAN-verified tech consultancy in Lagos, Nigeria. Lightweight desktop tools, offline AI, mobile & web development for SMEs.",
+  "homepage": "https://www.dronebugtech.shop",
   "repository": {
     "type": "git",
     "url": "https://github.com/ABugDrone/DroneBug-Technologies-Services.git"
@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
-    "build": "tsc -b && vite build",
+    "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview --host 0.0.0.0 --port 3000"

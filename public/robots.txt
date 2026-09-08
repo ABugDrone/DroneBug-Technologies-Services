@@ -1,0 +1,41 @@
+# robots.txt for https://www.dronebugtech.shop
+# Industry best-practice: explicit allow for AI crawlers (GEO)
+
+User-agent: *
+Allow: /
+Disallow: /*?*
+Disallow: /*#*
+
+# AI / GEO crawlers — explicitly allowed for generative engine optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.dronebugtech.shop/sitemap.xml

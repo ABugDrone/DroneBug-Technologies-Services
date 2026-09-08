@@ -1,0 +1,58 @@
+# DroneBug Technologies & Services — Full Context for AI Ingestion
+
+Canonical: https://www.dronebugtech.shop/
+Mirror: https://dronebug.vercel.app/ (308 to canonical)
+Created: 2016 (10+ years)
+Registered: SMEDAN Verified Micro Enterprise (Small and Medium Enterprises Development Agency of Nigeria)
+Contact: dronebugtechnologies@gmail.com | +2347035716349 | https://wa.me/2347035716349 | https://t.me/DroneBug
+GitHub: https://github.com/ABugDrone
+Logo: https://www.dronebugtech.shop/og-image.png (1254x1254)
+Certificate: https://storage.googleapis.com/dala-prod-public-storage/attachments/0c4da263-4d37-4170-af3f-87521929e9a2/1787687601669_DroneBug_SMEDAN_CERTIFICATE.pdf
+
+## Mission
+Lightweight desktop tools, AI-powered software, and expert tech consultancy — helping Nigerian businesses save money and grow faster. Offline-first where possible.
+
+## Services (6)
+1. Desktop Applications — Rapid utility tools, Offline-first architecture, Minimal resource footprint, Cross-platform support — Gradient from-sky-500 to-cyan-400
+2. AI & ML Solutions — Local offline inference, Smart workflow automation, Custom model training, API integration
+3. Mobile Development — React Native / Flutter, Push notifications, Offline sync, App store deployment
+4. Fullstack Web — React / Next.js, Real-time data, Responsive design, SEO optimized
+5. Branding & Design — Logo & identity design, UI/UX prototyping, Brand guidelines, Marketing collateral
+6. Tech Education — Hands-on workshops, Corporate training, Curriculum design, Mentorship programs
+
+## Pricing (NGN)
+- starter | Starter Discovery & Tech Triage | ₦5,000 | 30 minutes | Pay via OPay | 7035716349 Abdulazeez Yunusa
+- growth | Growth Architecture & Blueprint | ₦10,000 | 60 minutes | Moniepoint 7035716349 | Most Popular
+- premium | Top Premium Executive Assessment | ₦20,000 | Full assessment | Selar https://selar.com/974809781i
+
+Full tier details in src/data/dronebugData.ts
+
+## Stats
+- 10+ Years Engineering Experience
+- 5,000+ Satisfied Clients Supported
+- 99.99% Resolved Tech Problems
+- 40%+ Avg Client Cost Reduction
+
+## URLs
+- Home: https://www.dronebugtech.shop/
+- Solutions: https://www.dronebugtech.shop/#solutions
+- Pricing: https://www.dronebugtech.shop/#pricing
+- FAQ: https://www.dronebugtech.shop/#faq
+- Contact: https://www.dronebugtech.shop/#contact
+
+## Social Links
+- WhatsApp: https://wa.me/2347035716349
+- Email: https://mail.google.com/mail/?view=cm&fs=1&to=dronebugtechnologies@gmail.com&su=DroneBug%20Technologies%20Consultation%20Inquiry
+- GitHub: https://github.com/ABugDrone
+- Facebook: https://www.facebook.com/profile.php?id=100085447531492
+
+## Payment Channels
+- Selar: https://selar.com/974809781i
+- OPay: 7035716349 Abdulazeez Yunusa
+- Moniepoint: 7035716349 Abdulazeez Yunusa
+
+## FAQ Full
+(see llms.txt for 5 Q&A)
+
+## Extraction note
+This file is generated from src/data/dronebugData.ts and index.html JSON-LD. If search engines need fresh data, crawl sitemap.xml.

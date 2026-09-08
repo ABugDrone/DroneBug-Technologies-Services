@@ -1,6 +1,7 @@
 import { ServiceCategory, PricingTier, StatItem, FAQItem, SocialLink, PaymentMeta } from '../types';
 
-export const SHARE_URL = 'https://dronebug.vercel.app';
+export const CANONICAL_URL = 'https://www.dronebugtech.shop';
+export const SHARE_URL = CANONICAL_URL;
 
 export const BRAND = {
   name: 'DroneBug Technologies & Services',
@@ -8,9 +9,12 @@ export const BRAND = {
   email: 'dronebugtechnologies@gmail.com',
   gmailComposeUrl:
     'https://mail.google.com/mail/?view=cm&fs=1&to=dronebugtechnologies@gmail.com&su=DroneBug%20Technologies%20Consultation%20Inquiry',
-  logoUrl: 'https://storage.googleapis.com/dala-prod-public-storage/attachments/0c4da263-4d37-4170-af3f-87521929e9a2/1787687568457_Dronebug_2026_rebranded_logo.png',
+  logoUrl: '/og-image.png',
+  logoRemoteUrl: 'https://storage.googleapis.com/dala-prod-public-storage/attachments/0c4da263-4d37-4170-af3f-87521929e9a2/1787687568457_Dronebug_2026_rebranded_logo.png',
   smedanCertUrl: 'https://storage.googleapis.com/dala-prod-public-storage/attachments/0c4da263-4d37-4170-af3f-87521929e9a2/1787687601669_DroneBug_SMEDAN_CERTIFICATE.pdf',
   shareUrl: SHARE_URL,
+  canonicalUrl: CANONICAL_URL,
+  domain: 'www.dronebugtech.shop',
 };
 
 export const WHATSAPP_URL =

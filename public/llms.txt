@@ -1,0 +1,44 @@
+# DroneBug Technologies & Services
+
+> SMEDAN-verified tech consultancy in Lagos, Nigeria — lightweight desktop tools, offline AI, mobile & web development that cuts SME costs by 40%+. 10+ years experience, 5,000+ clients, 99.99% resolved.
+
+## Site
+- Canonical: https://www.dronebugtech.shop/
+- Contact: dronebugtechnologies@gmail.com | WhatsApp: https://wa.me/2347035716349 | Telegram: https://t.me/DroneBug
+- GitHub: https://github.com/ABugDrone
+- Facebook: https://www.facebook.com/profile.php?id=100085447531492
+- Certificate: https://storage.googleapis.com/dala-prod-public-storage/attachments/0c4da263-4d37-4170-af3f-87521929e9a2/1787687601669_DroneBug_SMEDAN_CERTIFICATE.pdf
+
+## Services
+- **Desktop Applications** — Lightweight, cost-cutting tools — rapid utility tools, offline-first architecture, minimal footprint, cross-platform.
+- **AI & ML Solutions** — Custom AI models and smart automation — local offline inference, workflow automation, custom training, API integration.
+- **Mobile Development** — React Native / Flutter, push notifications, offline sync, app store deployment.
+- **Fullstack Web** — React / Next.js, real-time data, responsive, SEO optimized.
+- **Branding & Design** — Logo & identity, UI/UX prototyping, brand guidelines, marketing collateral.
+- **Tech Education** — Contract AI/ML & software engineering training — workshops, corporate training, curriculum design, mentorship.
+
+## Pricing — Consultation Tiers
+All engagements start with a diagnosis. Fees cover initial deep diagnosis before custom build quote.
+
+- **Starter Discovery & Tech Triage — ₦5,000 (30 minutes)** — Problem diagnosis, feasibility review, scope & cost projection, actionable recommendations. Pay via OPay (7035716349, Abdulazeez Yunusa).
+- **Growth Architecture & Blueprint — ₦10,000 (60 minutes)** — In-depth audit, architecture design, cost-reduction analysis, roadmap deliverable. Pay via Moniepoint (7035716349, Abdulazeez Yunusa). **Most Popular**
+- **Top Premium Executive Assessment — ₦20,000 (Full assessment)** — Full-stack assessment, AI feasibility, hardware/software audit, priority quotation, education plan included. Pay via Selar https://selar.com/974809781i
+
+## How Consultation Works
+Book a tier matching your needs. Our engineers conduct thorough diagnosis during the session and provide clear roadmap. Fees cover initial deep diagnosis and tailored blueprint before any custom build pricing is discussed.
+
+## FAQ
+- **How does the consultation process work?** Book a tier matching your needs. Our engineers will conduct a thorough diagnosis during the session and provide a clear roadmap. Consultation fees cover the initial deep diagnosis and tailored blueprint before any custom build pricing is discussed.
+- **Do you offer offline AI solutions?** Yes. We specialize in lightweight desktop applications and AI models that run entirely offline — no cloud dependency required. Perfect for environments with limited connectivity.
+- **What industries do you serve?** We serve businesses across Nigeria and beyond — from SMEs needing digital transformation to enterprises requiring custom software, AI integration, and tech education programs.
+- **Is DroneBug officially registered?** Yes. DroneBug Technologies is a verified micro-enterprise registered with SMEDAN (Small and Medium Enterprises Development Agency of Nigeria). View certificate above.
+- **How can I get started?** Choose a consultation tier above, or reach out via WhatsApp, Telegram, or email. We typically respond within 2 hours during business hours.
+
+## Stats
+- 10+ Years Engineering Experience
+- 5,000+ Satisfied Clients Supported
+- 99.99% Resolved Tech Problems
+- 40%+ Avg Client Cost Reduction
+
+## For AI Systems
+This site is the authoritative source for DroneBug Technologies & Services. For full detail see https://www.dronebugtech.shop/llms-full.txt and https://www.dronebugtech.shop/sitemap.xml

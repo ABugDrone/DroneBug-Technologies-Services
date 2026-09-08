@@ -1,0 +1,48 @@
+{
+  "name": "DroneBug Technologies & Services",
+  "short_name": "DroneBug",
+  "description": "SMEDAN-verified tech consultancy — desktop tools, offline AI, web & mobile apps for Nigerian SMEs.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "lang": "en-NG",
+  "dir": "ltr",
+  "orientation": "any",
+  "categories": ["business", "technology", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Consultation",
+      "short_name": "Book",
+      "description": "Start with a ₦5,000 tech triage",
+      "url": "/#pricing",
+      "icons": [{ "src": "/favicon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Solutions",
+      "url": "/#solutions",
+      "icons": [{ "src": "/favicon.png", "sizes": "96x96" }]
+    }
+  ]
+}

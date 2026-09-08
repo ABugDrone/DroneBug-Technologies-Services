@@ -2,12 +2,13 @@
 
 > Lightweight desktop tools, AI-powered software, and expert tech consultancy — helping Nigerian businesses save money and grow faster.
 
-[![Live](https://img.shields.io/badge/live-dronebugtech.shop-0ea5e9?style=for-the-badge)](https://dronebug.vercel.app)
-[![SMEDAN Verified](https://img.shields.io/badge/SMEDAN-Verified-10b981?style=for-the-badge)](https://dronebugtech.shop)
+[![Live](https://img.shields.io/badge/live-www.dronebugtech.shop-0ea5e9?style=for-the-badge)](https://www.dronebugtech.shop)
+[![Mirror](https://img.shields.io/badge/mirror-dronebug.vercel.app-64748b?style=for-the-badge)](https://dronebug.vercel.app)
+[![SMEDAN Verified](https://img.shields.io/badge/SMEDAN-Verified-10b981?style=for-the-badge)](https://www.dronebugtech.shop)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646cff?logo=vite)](https://vitejs.dev)
 [![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev)
 
-**Live site:** https://dronebugtech.shop 
+**Live site:** https://www.dronebugtech.shop (canonical) — mirror `https://dronebug.vercel.app` 308 → canonical
 **Previous host:** https://c23e91e1.mydala.app (Dala)  
 **Repository:** https://github.com/ABugDrone/DroneBug-Technologies-Services
 
@@ -56,9 +57,10 @@ src/
 
 Key config:
 - `vite.config.ts` — alias `@` → `./src`, port 3000, host true
-- `vercel.json` — Vite framework, SPA rewrite `/(.*)` → `/index.html`
-- `index.html` — SEO / OG tags point to `https://dronebug.vercel.app`
-- `src/data/dronebugData.ts` — single source of truth for brand/links/pricing. Update `SHARE_URL` and `PAYMENT_CHANNELS` here.
+- `vercel.json` — Vite framework, SPA rewrite `/(.*)` → `/index.html`, 308 redirects `vercel.app` + apex → `www.dronebugtech.shop`, security headers
+- `index.html` — SEO / OG point to `https://www.dronebugtech.shop` with JSON-LD (Organization, FAQPage, Offer, Breadcrumbs) + local `/og-image.png`
+- `public/` — `sitemap.xml`, `robots.txt`, `llms.txt`, `site.webmanifest`, `og-image.png` (all canonical)
+- `src/data/dronebugData.ts` — single source of truth. `CANONICAL_URL` = `https://www.dronebugtech.shop`
 
 ## 🔗 Important Links (edit in `src/data/dronebugData.ts`)
 
@@ -73,12 +75,12 @@ Key config:
 
 ## ▲ Deploy to Vercel
 
-This repo is configured for **Vercel** as `dronebug.vercel.app`.
+This repo is configured for **Vercel** as `www.dronebugtech.shop` (canonical). Mirror `dronebug.vercel.app` 308 → canonical.
 
 1. Import `ABugDrone/DroneBug-Technologies-Services` in Vercel dashboard
 2. Framework preset: **Vite** (auto-detected via `vercel.json`)
-3. Build command: `npm run build` — Output: `dist`
-4. Assign domain `dronebug.vercel.app` (Project Settings → Domains)
+3. Build command: `pnpm run build` — Output: `dist`
+4. Domains: `www.dronebugtech.shop` (primary), `dronebugtech.shop` → `www`, `dronebug.vercel.app` → `www` (all set in `vercel.json` redirects)
 5. Every `git push` to `main` auto-deploys; PRs get preview deployments
 
 Alternatively via CLI:
@@ -86,15 +88,27 @@ Alternatively via CLI:
 ```bash
 npm i -g vercel
 vercel --prod
-vercel domains add dronebug.vercel.app
+vercel domains add www.dronebugtech.shop
 ```
 
-## 🔄 Migrating from Dala (`mydala.app`)
+## 🔄 Domain History
 
-- Updated `SHARE_URL` and `og:url` from `dronebug.mydala.app` → `dronebug.vercel.app`
-- Removed Dala internals: `dala-internal-vite-clear-log-plugin.js`, `dala-internal-watch-build-errors.js`, `PORT=3000` unix env syntax
-- Added `vercel.json` + `_redirects` for SPA routing
-- Renamed package `react-starter-template` → `dronebug-technologies-services`
+- `c23e91e1.mydala.app` → `dronebug.vercel.app` → **`www.dronebugtech.shop`** (canonical since 2026-08-28)
+- `CANONICAL_URL` = `https://www.dronebugtech.shop` in `src/data/dronebugData.ts:3`
+- `robots.txt` / `sitemap.xml` / `llms.txt` / `og:image` all served from canonical
+- Local `/og-image.png` (1254×1254) mirrors GCS logo for reliable OG (no hotlink dependency)
+- Industry SEO: `canonical` + JSON-LD (Organization/FAQ/Service/Offer/Breadcrumbs) + `llms.txt` for AI GE
+
+## 🔍 SEO & AI/GE Verification
+
+```bash
+curl -I https://www.dronebugtech.shop/robots.txt          # Sitemap: https://www.dronebugtech.shop/sitemap.xml
+curl https://www.dronebugtech.shop/sitemap.xml             # 5 URLs
+curl https://www.dronebugtech.shop/llms.txt                # AI crawlable markdown
+# View Source → <link rel="canonical"> + <meta property="og:image"> = www.dronebugtech.shop/og-image.png
+# Rich Results: https://search.google.com/test/rich-results
+# OG: https://www.opengraph.xyz/  https://cards-dev.twitter.com/validator
+```
 
 ## 📧 Contact
 
