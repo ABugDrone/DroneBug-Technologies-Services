@@ -44,6 +44,11 @@ export const DIRMS_META = {
   downloadGithub:
     'https://github.com/ABugDrone/DroneBug-Technologies-Services/releases',
   downloadLocal: '/downloads/DIRMS_1.5.0_x64-setup.exe',
+  webview2Url: 'https://go.microsoft.com/fwlink/p/?LinkId=2124703',
+  webview2OfflineUrl:
+    'https://developer.microsoft.com/microsoft-edge/webview2/?form=MA13LH',
+  webview2Note:
+    'Requires the free Microsoft WebView2 Runtime (pre-installed on most Windows 10/11 PCs).',
   size: '~5 MB',
   platform: 'Windows x64',
   license: 'Open-Source',

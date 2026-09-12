@@ -66,9 +66,34 @@ export default function Dirms() {
               Mirror: direct .exe
             </a>
           </div>
-          <p className="text-xs text-zinc-400 dark:text-zinc-500">
+          <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-5">
             Primary: Google Drive · Alternative: <a href={DIRMS_META.downloadGithub} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">GitHub Releases</a> · Free & open-source
           </p>
+
+          {/* WebView2 requirement */}
+          <div className="max-w-2xl mx-auto backdrop-blur-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-2xl p-4 sm:p-5 text-left">
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed mb-3">
+              <strong className="text-zinc-800 dark:text-zinc-100">One requirement:</strong> {DIRMS_META.webview2Note}
+            </p>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+              <a
+                href={DIRMS_META.webview2Url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full hover:shadow-lg hover:shadow-emerald-500/25 transition-all active:scale-[0.97]"
+              >
+                Get it from Microsoft
+              </a>
+              <a
+                href={DIRMS_META.webview2OfflineUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-zinc-700 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-700 rounded-full hover:bg-white/70 dark:hover:bg-slate-800 transition-all active:scale-[0.97]"
+              >
+                Offline installer (alternative)
+              </a>
+            </div>
+          </div>
         </motion.header>
 
         {/* Verdict box */}
@@ -144,7 +169,7 @@ export default function Dirms() {
         >
           <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-2">Ready to ditch the notebook?</h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Free, open-source, offline. Installs on any Windows 10/11 PC in under a minute.</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <a
               href={DIRMS_META.downloadDrive}
               target="_blank"
@@ -162,6 +187,9 @@ export default function Dirms() {
               Ask us on WhatsApp
             </a>
           </div>
+          <p className="text-xs text-zinc-400 dark:text-zinc-500">
+            Needs Microsoft WebView2? <a href={DIRMS_META.webview2Url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Get it from Microsoft</a> · <a href={DIRMS_META.webview2OfflineUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Offline installer</a>
+          </p>
         </motion.div>
       </div>
     </article>

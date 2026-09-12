@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && node scripts/prerender-routes.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview --host 0.0.0.0 --port 3000"
