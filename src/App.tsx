@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Toaster, toast } from 'sonner';
+import { Routes, Route } from 'react-router-dom';
+import { Toaster } from 'sonner';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import SolutionsBento from './components/SolutionsBento';
-import PricingAndAssessment from './components/PricingAndAssessment';
+import ScrollToTop from './components/ScrollToTop';
+import PartnersMarquee from './components/PartnersMarquee';
 import SmedanTrustAndFooter from './components/SmedanTrustAndFooter';
 import PaymentModal from './components/PaymentModal';
+import Home from './pages/Home';
+import Products from './pages/Products';
+import Dirms from './pages/Dirms';
+import Dsms from './pages/Dsms';
+import Partners from './pages/Partners';
 import { PRICING_TIERS, WHATSAPP_URL } from './data/dronebugData';
 import type { PricingTier } from './types';
 
@@ -30,6 +35,7 @@ function App() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-slate-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
       <Toaster position="top-center" richColors />
+      <ScrollToTop />
 
       {/* SMEDAN Modal */}
       {showSMEDAN && (
@@ -133,9 +139,15 @@ function App() {
       />
 
       <main>
-        <Hero onOpenPayment={handleBooking} />
-        <SolutionsBento />
-        <PricingAndAssessment onOpenBooking={setSelectedTier} />
+        <Routes>
+          <Route path="/" element={<Home onOpenPayment={handleBooking} onOpenBooking={setSelectedTier} />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/dirms" element={<Dirms />} />
+          <Route path="/products/dsms" element={<Dsms />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="*" element={<Home onOpenPayment={handleBooking} onOpenBooking={setSelectedTier} />} />
+        </Routes>
+        <PartnersMarquee />
         <SmedanTrustAndFooter onOpenSMEDAN={() => setShowSMEDAN(true)} />
       </main>
 
