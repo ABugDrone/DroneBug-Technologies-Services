@@ -8,15 +8,18 @@ import dirms7 from '../assets/dirms/dirms-7.png';
 import dirms8 from '../assets/dirms/dirms-8.png';
 import dirms9 from '../assets/dirms/dirms-9.png';
 import dirms10 from '../assets/dirms/dirms-10.png';
+import dirmsIcon from '../assets/dirms-icon.png';
 import dsmsIcon from '../assets/dsms-icon.png';
 import dsmsPromo from '../assets/dsms-promo.png';
 
 import partnerAmirable from '../assets/Partners/amirable.png';
+import partnerAmoCakes from '../assets/Partners/amo-cakes-n-more.png';
 import partnerBeti from '../assets/Partners/beti.png';
 import partnerFakson from '../assets/Partners/fakson.png';
 import partnerJoainas from '../assets/Partners/joainas-mart.png';
 import partnerMaiKanti from '../assets/Partners/mai-kanti.png';
 import partnerMajesty from '../assets/Partners/majesty.png';
+import partnerMobgal from '../assets/Partners/mobgal-khairu.png';
 import partnerNerrylinks from '../assets/Partners/nerrylinks.png';
 import partnerSenior from '../assets/Partners/senior-citizen.png';
 import partnerTeedal from '../assets/Partners/teedal-kahiru.png';
@@ -37,6 +40,7 @@ export const DIRMS_META = {
   shortName: 'DIRMS',
   version: 'v1.5.0',
   tagline: 'Offline-first POS, inventory & records for Nigerian SMEs.',
+  icon: dirmsIcon,
   description:
     'DIRMS is an open-source, offline-first desktop app for shops, marts, pharmacies and small warehouses: point-of-sale checkout, inventory catalog, sales logs, customer credit ledgers, expense tracking, thermal receipt printing, barcode generation, and one-click SQLite backup — all running locally with no internet required.',
   downloadDrive:
@@ -163,11 +167,13 @@ export const DSMS_META = {
 /** Partner logos — images only, intentionally no names/descriptions. */
 export const PARTNER_LOGOS: string[] = [
   partnerAmirable,
+  partnerAmoCakes,
   partnerBeti,
   partnerFakson,
   partnerJoainas,
   partnerMaiKanti,
   partnerMajesty,
+  partnerMobgal,
   partnerNerrylinks,
   partnerSenior,
   partnerTeedal,

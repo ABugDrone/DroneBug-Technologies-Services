@@ -39,10 +39,14 @@ export default function Dirms() {
               100% OFFLINE
             </span>
           </div>
+          <img
+            src={DIRMS_META.icon}
+            alt="DIRMS — DroneBug Inventory and Records Management System logo"
+            className="h-36 w-36 sm:h-44 sm:w-44 mx-auto rounded-3xl shadow-2xl mb-6 object-cover"
+          />
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-900 dark:text-white mb-2">
             {DIRMS_META.shortName}
-          </h1>
-          <p className="text-base sm:text-lg font-medium text-sky-600 dark:text-sky-400 mb-4">{DIRMS_META.name}</p>
+          </h1>          <p className="text-base sm:text-lg font-medium text-sky-600 dark:text-sky-400 mb-4">{DIRMS_META.name}</p>
           <p className="max-w-2xl mx-auto text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">{DIRMS_META.description}</p>
 
           {/* Download block */}

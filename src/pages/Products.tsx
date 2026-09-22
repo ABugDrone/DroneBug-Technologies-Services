@@ -40,10 +40,15 @@ export default function Products() {
             <span className="inline-block text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 mb-4">
               AVAILABLE · {DIRMS_META.license} · {DIRMS_META.version}
             </span>
-            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-white mb-1">
-              {DIRMS_META.shortName}
-            </h2>
-            <p className="text-sm font-medium text-sky-600 dark:text-sky-400 mb-3">{DIRMS_META.name}</p>
+            <div className="flex items-start gap-4 mb-3">
+              <img src={DIRMS_META.icon} alt="DIRMS logo" loading="lazy" className="h-16 w-16 rounded-2xl object-cover shadow-md" />
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-white">
+                  {DIRMS_META.shortName}
+                </h2>
+                <p className="text-sm font-medium text-sky-600 dark:text-sky-400">{DIRMS_META.name}</p>
+              </div>
+            </div>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-6">{DIRMS_META.tagline} {DIRMS_META.stack}.</p>
             <div className="flex flex-wrap gap-3">
               <Link
