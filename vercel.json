@@ -7,9 +7,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/products", "destination": "/index.html" },
+    { "source": "/products", "destination": "/products.html" },
+    { "source": "/products/dirms", "destination": "/products/dirms.html" },
+    { "source": "/products/dsms", "destination": "/products/dsms.html" },
     { "source": "/products/:path*", "destination": "/index.html" },
-    { "source": "/partners", "destination": "/index.html" },
+    { "source": "/partners", "destination": "/partners.html" },
     { "source": "/partners/:path*", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],

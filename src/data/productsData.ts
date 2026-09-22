@@ -8,6 +8,7 @@ import dirms7 from '../assets/dirms/dirms-7.png';
 import dirms8 from '../assets/dirms/dirms-8.png';
 import dirms9 from '../assets/dirms/dirms-9.png';
 import dirms10 from '../assets/dirms/dirms-10.png';
+import dirms11 from '../assets/dirms/dirms-11.png';
 import dirmsIcon from '../assets/dirms-icon.png';
 import dsmsIcon from '../assets/dsms-icon.png';
 import dsmsPromo from '../assets/dsms-promo.png';
@@ -39,6 +40,9 @@ export const DIRMS_META = {
   name: 'DroneBug Inventory and Records Management System',
   shortName: 'DIRMS',
   version: 'v1.5.0',
+  latestVersion: 'v1.6.0',
+  latestTag: 'Global version',
+  latestSize: '~3 MB',
   tagline: 'Offline-first POS, inventory & records for Nigerian SMEs.',
   icon: dirmsIcon,
   description:
@@ -48,6 +52,9 @@ export const DIRMS_META = {
   downloadGithub:
     'https://github.com/ABugDrone/DroneBug-Technologies-Services/releases',
   downloadLocal: '/downloads/DIRMS_1.5.0_x64-setup.exe',
+  downloadLatestGithub:
+    'https://github.com/ABugDrone/DroneBug-Technologies-Services/releases',
+  downloadLatestLocal: '/downloads/DIRMS_1.6.0_x64-setup.exe',
   webview2Url: 'https://go.microsoft.com/fwlink/p/?LinkId=2124703',
   webview2OfflineUrl:
     'https://developer.microsoft.com/microsoft-edge/webview2/?form=MA13LH',
@@ -149,6 +156,15 @@ export const DIRMS_FEATURES: DirmsFeature[] = [
     body: 'Built for real counters, not demos: switch colors, fonts, and text size from 100% up to 138% Extra Large so totals stay legible across the shop. Every naira figure re-renders instantly with a live ₦125,000 sample preview.',
     bullets: ['100%–138% text scaling', 'Color + font themes', 'Live sample preview', 'High-visibility cashier mode'],
     image: dirms10,
+  },
+  {
+    id: 11,
+    module: 'Admin · Global',
+    shortcut: 'F9',
+    title: 'Global Currency + Clock-Tamper Guard',
+    body: 'v1.6.0 goes global: the new Store Currency panel lets each shop trade in its own local currency — prices, receipts and reports follow the selection while old records keep their original currency. A new system-clock tampering alert watches the PC clock so backdated entries can never silently corrupt your sales records.',
+    bullets: ['Shop currency selector (NGN default)', 'Old records keep original currency', 'Clock-tamper alert protects sales integrity', 'New Reports & Analytics modules'],
+    image: dirms11,
   },
 ];
 

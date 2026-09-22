@@ -38,7 +38,7 @@ export default function Products() {
           >
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 to-indigo-500" />
             <span className="inline-block text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 mb-4">
-              AVAILABLE · {DIRMS_META.license} · {DIRMS_META.version}
+              AVAILABLE · {DIRMS_META.license} · {DIRMS_META.latestVersion} GLOBAL
             </span>
             <div className="flex items-start gap-4 mb-3">
               <img src={DIRMS_META.icon} alt="DIRMS logo" loading="lazy" className="h-16 w-16 rounded-2xl object-cover shadow-md" />

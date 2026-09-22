@@ -30,7 +30,7 @@ export default function Dirms() {
         >
           <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
             <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400">
-              {DIRMS_META.license.toUpperCase()} · {DIRMS_META.version}
+              NEW · {DIRMS_META.latestVersion} {DIRMS_META.latestTag.toUpperCase()}
             </span>
             <span className="text-xs font-bold px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-400">
               {DIRMS_META.platform}
@@ -49,10 +49,10 @@ export default function Dirms() {
           </h1>          <p className="text-base sm:text-lg font-medium text-sky-600 dark:text-sky-400 mb-4">{DIRMS_META.name}</p>
           <p className="max-w-2xl mx-auto text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">{DIRMS_META.description}</p>
 
-          {/* Download block */}
+          {/* Download block — latest first, previous version retained below */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
             <a
-              href={DIRMS_META.downloadDrive}
+              href={DIRMS_META.downloadLatestGithub}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-xl hover:shadow-sky-500/30 transition-all active:scale-[0.97]"
@@ -60,18 +60,18 @@ export default function Dirms() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download for Windows ({DIRMS_META.size})
+              Download {DIRMS_META.latestVersion} Global ({DIRMS_META.latestSize})
             </a>
             <a
-              href={DIRMS_META.downloadLocal}
+              href={DIRMS_META.downloadLatestLocal}
               download
               className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-zinc-700 dark:text-zinc-200 backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-white/30 dark:border-white/10 rounded-full hover:bg-white/80 transition-all active:scale-[0.97]"
             >
-              Mirror: direct .exe
+              Mirror: direct {DIRMS_META.latestVersion} .exe
             </a>
           </div>
           <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-5">
-            Primary: Google Drive · Alternative: <a href={DIRMS_META.downloadGithub} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">GitHub Releases</a> · Free & open-source
+            Latest via <a href={DIRMS_META.downloadLatestGithub} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">GitHub Releases</a> · {DIRMS_META.license} · Still on {DIRMS_META.version}? <a href={DIRMS_META.downloadDrive} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Google Drive</a> · <a href={DIRMS_META.downloadLocal} download className="underline hover:text-sky-500">direct .exe</a>
           </p>
 
           {/* WebView2 requirement */}
@@ -175,12 +175,12 @@ export default function Dirms() {
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Free, open-source, offline. Installs on any Windows 10/11 PC in under a minute.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <a
-              href={DIRMS_META.downloadDrive}
+              href={DIRMS_META.downloadLatestGithub}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-xl hover:shadow-sky-500/30 transition-all active:scale-[0.97]"
             >
-              Download DIRMS {DIRMS_META.version}
+              Download DIRMS {DIRMS_META.latestVersion} Global
             </a>
             <a
               href={WHATSAPP_URL}
@@ -192,7 +192,7 @@ export default function Dirms() {
             </a>
           </div>
           <p className="text-xs text-zinc-400 dark:text-zinc-500">
-            Needs Microsoft WebView2? <a href={DIRMS_META.webview2Url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Get it from Microsoft</a> · <a href={DIRMS_META.webview2OfflineUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Offline installer</a>
+            Needs Microsoft WebView2? <a href={DIRMS_META.webview2Url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Get it from Microsoft</a> · <a href={DIRMS_META.webview2OfflineUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Offline installer</a> · Prefer {DIRMS_META.version}? <a href={DIRMS_META.downloadDrive} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Get it here</a>
           </p>
         </motion.div>
       </div>
