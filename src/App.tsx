@@ -11,6 +11,7 @@ import Products from './pages/Products';
 import Dirms from './pages/Dirms';
 import Dsms from './pages/Dsms';
 import Partners from './pages/Partners';
+import Documentation from './pages/Documentation';
 import { PRICING_TIERS, WHATSAPP_URL } from './data/dronebugData';
 import type { PricingTier } from './types';
 
@@ -145,6 +146,7 @@ function App() {
           <Route path="/products/dirms" element={<Dirms />} />
           <Route path="/products/dsms" element={<Dsms />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/documentation" element={<Documentation />} />
           <Route path="*" element={<Home onOpenPayment={handleBooking} onOpenBooking={setSelectedTier} />} />
         </Routes>
         <PartnersMarquee />

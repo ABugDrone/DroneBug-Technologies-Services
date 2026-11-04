@@ -17,12 +17,15 @@ import partnerAmirable from '../assets/Partners/amirable.png';
 import partnerAmoCakes from '../assets/Partners/amo-cakes-n-more.png';
 import partnerBeti from '../assets/Partners/beti.png';
 import partnerFakson from '../assets/Partners/fakson.png';
+import partnerGodswill from '../assets/Partners/godswill.png';
 import partnerJoainas from '../assets/Partners/joainas-mart.png';
 import partnerMaiKanti from '../assets/Partners/mai-kanti.png';
 import partnerMajesty from '../assets/Partners/majesty.png';
 import partnerMobgal from '../assets/Partners/mobgal-khairu.png';
 import partnerNerrylinks from '../assets/Partners/nerrylinks.png';
+import partnerRabiu from '../assets/Partners/rabiu-entreprises.png';
 import partnerSenior from '../assets/Partners/senior-citizen.png';
+import partnerShamhalee from '../assets/Partners/shamhalee-easybuy.png';
 import partnerTeedal from '../assets/Partners/teedal-kahiru.png';
 import partnerUrdi from '../assets/Partners/urdi-galore.png';
 
@@ -186,12 +189,15 @@ export const PARTNER_LOGOS: string[] = [
   partnerAmoCakes,
   partnerBeti,
   partnerFakson,
+  partnerGodswill,
   partnerJoainas,
   partnerMaiKanti,
   partnerMajesty,
   partnerMobgal,
   partnerNerrylinks,
+  partnerRabiu,
   partnerSenior,
+  partnerShamhalee,
   partnerTeedal,
   partnerUrdi,
 ];

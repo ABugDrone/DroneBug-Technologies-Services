@@ -13,6 +13,8 @@
     { "source": "/products/:path*", "destination": "/index.html" },
     { "source": "/partners", "destination": "/partners.html" },
     { "source": "/partners/:path*", "destination": "/index.html" },
+    { "source": "/documentation", "destination": "/documentation.html" },
+    { "source": "/documentation/:path*", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "redirects": [

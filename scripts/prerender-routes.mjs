@@ -47,6 +47,15 @@ const routes = {
     imageHeight: '1254',
     imageAlt: 'DroneBug Technologies — SMEDAN 2026 Rebranded Logo',
   },
+  documentation: {
+    title: 'Documentation — How to Use DIRMS | DroneBug Technologies',
+    description:
+      'Step-by-step DIRMS documentation: install on Windows, add products, sell at the POS, print receipts, track credit and expenses, and back up your records.',
+    image: `${site}/og-dirms.png`,
+    imageWidth: '1600',
+    imageHeight: '1600',
+    imageAlt: 'DIRMS — DroneBug Inventory and Records Management System logo',
+  },
 };
 
 /** Replace one tag's content / attribute safely (replacer fn avoids `$` pitfalls). */

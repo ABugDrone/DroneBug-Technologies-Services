@@ -98,6 +98,13 @@ export default function Dirms() {
               </a>
             </div>
           </div>
+
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-5">
+            New to DIRMS?{' '}
+            <Link to="/documentation" className="font-semibold text-sky-600 dark:text-sky-400 hover:underline">
+              Read the step-by-step documentation →
+            </Link>
+          </p>
         </motion.header>
 
         {/* Verdict box */}

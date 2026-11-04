@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BRAND, FAQS, SOCIAL_LINKS } from '../data/dronebugData';
 
@@ -146,6 +147,12 @@ export default function SmedanTrustAndFooter({ onOpenSMEDAN }: { onOpenSMEDAN: (
               </span>
             </div>
             <div className="flex items-center gap-4">
+              <Link
+                to="/documentation"
+                className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
+              >
+                Documentation
+              </Link>
               <a
                 href={BRAND.gmailComposeUrl}
                 target="_blank"

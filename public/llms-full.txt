@@ -39,6 +39,11 @@ Full tier details in src/data/dronebugData.ts
 - Pricing: https://www.dronebugtech.shop/#pricing
 - FAQ: https://www.dronebugtech.shop/#faq
 - Contact: https://www.dronebugtech.shop/#contact
+- Products: https://www.dronebugtech.shop/products
+- DIRMS product page: https://www.dronebugtech.shop/products/dirms
+- DSMS product page: https://www.dronebugtech.shop/products/dsms
+- Partners: https://www.dronebugtech.shop/partners
+- Documentation (DIRMS how-to): https://www.dronebugtech.shop/documentation
 
 ## Social Links
 - WhatsApp: https://wa.me/2347035716349

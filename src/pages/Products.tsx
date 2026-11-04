@@ -57,6 +57,12 @@ export default function Products() {
               >
                 Read the Review
               </Link>
+              <Link
+                to="/documentation"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-sky-700 dark:text-sky-400 bg-sky-50 dark:bg-sky-900/30 rounded-full hover:bg-sky-100 dark:hover:bg-sky-900/50 transition-all active:scale-[0.97]"
+              >
+                Read the Guide
+              </Link>
               <a
                 href={DIRMS_META.downloadDrive}
                 target="_blank"

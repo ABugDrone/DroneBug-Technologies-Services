@@ -28,7 +28,7 @@ export default function Navbar({
   };
 
   const linkCls = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-1.5 text-sm rounded-full transition-colors ${
+    `px-2 lg:px-3 py-1.5 text-sm rounded-full transition-colors ${
       isActive
         ? 'text-zinc-900 dark:text-white bg-black/5 dark:bg-white/10 font-semibold'
         : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10'
@@ -99,13 +99,14 @@ export default function Navbar({
               </AnimatePresence>
             </div>
             <NavLink to="/partners" className={linkCls}>Partners</NavLink>
-            <button onClick={() => goAnchor('#solutions')} className="px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+            <NavLink to="/documentation" className={linkCls}>Docs</NavLink>
+            <button onClick={() => goAnchor('#solutions')} className="px-2 lg:px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
               Solutions
             </button>
-            <button onClick={() => goAnchor('#pricing')} className="px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+            <button onClick={() => goAnchor('#pricing')} className="px-2 lg:px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
               Pricing
             </button>
-            <button onClick={() => goAnchor('#contact')} className="px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+            <button onClick={() => goAnchor('#contact')} className="px-2 lg:px-3 py-1.5 text-sm text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
               Contact
             </button>
           </div>
@@ -168,6 +169,9 @@ export default function Navbar({
               </Link>
               <Link to="/partners" onClick={() => setMobileOpen(false)} className="text-lg font-medium text-zinc-800 dark:text-zinc-200 py-3 border-b border-zinc-200 dark:border-zinc-800">
                 Our Partners
+              </Link>
+              <Link to="/documentation" onClick={() => setMobileOpen(false)} className="text-lg font-medium text-zinc-800 dark:text-zinc-200 py-3 border-b border-zinc-200 dark:border-zinc-800">
+                Documentation
               </Link>
               {[
                 { label: 'Solutions', hash: '#solutions' },
