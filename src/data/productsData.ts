@@ -19,6 +19,7 @@ import partnerBeti from '../assets/Partners/beti.png';
 import partnerFakson from '../assets/Partners/fakson.png';
 import partnerGodswill from '../assets/Partners/godswill.png';
 import partnerJoainas from '../assets/Partners/joainas-mart.png';
+import partnerKingzzy from '../assets/Partners/Kingzzy_Akamelu_Resources_Icon.png';
 import partnerMaiKanti from '../assets/Partners/mai-kanti.png';
 import partnerMajesty from '../assets/Partners/majesty.png';
 import partnerMobgal from '../assets/Partners/mobgal-khairu.png';
@@ -191,6 +192,7 @@ export const PARTNER_LOGOS: string[] = [
   partnerFakson,
   partnerGodswill,
   partnerJoainas,
+  partnerKingzzy,
   partnerMaiKanti,
   partnerMajesty,
   partnerMobgal,
