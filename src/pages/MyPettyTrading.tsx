@@ -52,7 +52,7 @@ const FEATURES = [
   },
 ];
 
-const GET_APP_URL = 'https://wa.me/p/29123150204001326/2347037716349';
+const GET_APP_URL = 'https://wa.me/p/29123150204001326/2347035716349';
 
 export default function MyPettyTrading() {
   useEffect(() => {
