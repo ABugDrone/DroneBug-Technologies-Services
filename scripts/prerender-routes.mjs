@@ -12,9 +12,9 @@ const site = 'https://www.dronebugtech.shop';
 
 const routes = {
   products: {
-    title: 'Our Products — DIRMS & DSMS | DroneBug Technologies',
+    title: 'Our Products — DIRMS, DSMS & MyPettyTrading | DroneBug Technologies',
     description:
-      'DIRMS inventory & POS software (v1.6.0 Global) and the upcoming DSMS sheets companion — free, offline-first desktop tools from DroneBug.',
+      'DIRMS inventory & POS software, the upcoming DSMS sheets companion, and MyPettyTrading offline Android bookkeeper — free, offline-first tools from DroneBug.',
     image: `${site}/og-image.png`,
     imageWidth: '1254',
     imageHeight: '1254',
@@ -37,6 +37,24 @@ const routes = {
     imageWidth: '1254',
     imageHeight: '1254',
     imageAlt: 'DSMS — DroneBug Sheets Management System logo',
+  },
+  'products/mypettytrading': {
+    title: 'MyPettyTrading — Offline Pocket Bookkeeper | DroneBug',
+    description:
+      'MyPettyTrading is a 100% offline Android bookkeeping app for petty traders, shops and stalls: sales, expenses, credit, inventory, receipts, and staff sync.',
+    image: `${site}/og-image.png`,
+    imageWidth: '1254',
+    imageHeight: '1254',
+    imageAlt: 'DroneBug Technologies — SMEDAN 2026 Rebranded Logo',
+  },
+  'privacy-policy': {
+    title: 'Privacy Policy — MyPettyTrading | DroneBug Technologies',
+    description:
+      'Privacy Policy for the MyPettyTrading Android app: local-first shop data, Google AdMob advertising, permissions, and your privacy rights.',
+    image: `${site}/og-image.png`,
+    imageWidth: '1254',
+    imageHeight: '1254',
+    imageAlt: 'DroneBug Technologies — SMEDAN 2026 Rebranded Logo',
   },
   partners: {
     title: 'Our Partners | DroneBug Technologies',

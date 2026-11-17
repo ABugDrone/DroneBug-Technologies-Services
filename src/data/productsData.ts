@@ -12,6 +12,8 @@ import dirms11 from '../assets/dirms/dirms-11.png';
 import dirmsIcon from '../assets/dirms-icon.png';
 import dsmsIcon from '../assets/dsms-icon.png';
 import dsmsPromo from '../assets/dsms-promo.png';
+import mypettytradingIcon from '../assets/mypettytrading-icon.jpg';
+import mypettytradingSplash from '../assets/mypettytrading-splash.jpg';
 
 import partnerAmirable from '../assets/Partners/amirable.png';
 import partnerAmoCakes from '../assets/Partners/amo-cakes-n-more.png';
@@ -182,6 +184,20 @@ export const DSMS_META = {
   pillars: ['Organize', 'Analyze', 'Simplify', 'Achieve'],
   icon: dsmsIcon,
   promo: dsmsPromo,
+};
+
+export const MYPETTYTRADING_META = {
+  name: 'MyPettyTrading',
+  shortName: 'MyPettyTrading',
+  status: 'Available on Android',
+  tagline: 'Offline pocket bookkeeper for petty traders, shops & stalls.',
+  description:
+    'MyPettyTrading turns any Android phone into a fast, 100% offline notebook-style bookkeeping system for sales, expenses, market purchases, customer credit, receipts, and inventory. Built for Nigerian and African petty traders who want digital records without cloud subscriptions or mobile data.',
+  platform: 'Android',
+  icon: mypettytradingIcon,
+  splash: mypettytradingSplash,
+  privacyUrl: '/privacy-policy',
+  supportEmail: 'dronebugtechnologies@gmail.com',
 };
 
 /** Partner logos — images only, intentionally no names/descriptions. */

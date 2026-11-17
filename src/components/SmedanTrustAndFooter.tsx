@@ -153,6 +153,12 @@ export default function SmedanTrustAndFooter({ onOpenSMEDAN }: { onOpenSMEDAN: (
               >
                 Documentation
               </Link>
+              <Link
+                to="/privacy-policy"
+                className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
+              >
+                Privacy Policy
+              </Link>
               <a
                 href={BRAND.gmailComposeUrl}
                 target="_blank"

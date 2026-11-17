@@ -42,6 +42,8 @@ Full tier details in src/data/dronebugData.ts
 - Products: https://www.dronebugtech.shop/products
 - DIRMS product page: https://www.dronebugtech.shop/products/dirms
 - DSMS product page: https://www.dronebugtech.shop/products/dsms
+- MyPettyTrading product page: https://www.dronebugtech.shop/products/mypettytrading
+- MyPettyTrading Privacy Policy: https://www.dronebugtech.shop/privacy-policy
 - Partners: https://www.dronebugtech.shop/partners
 - Documentation (DIRMS how-to): https://www.dronebugtech.shop/documentation
 

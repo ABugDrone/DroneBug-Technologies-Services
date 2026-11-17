@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Dirms from './pages/Dirms';
 import Dsms from './pages/Dsms';
+import MyPettyTrading from './pages/MyPettyTrading';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Partners from './pages/Partners';
 import Documentation from './pages/Documentation';
 import { PRICING_TIERS, WHATSAPP_URL } from './data/dronebugData';
@@ -145,6 +147,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/dirms" element={<Dirms />} />
           <Route path="/products/dsms" element={<Dsms />} />
+          <Route path="/products/mypettytrading" element={<MyPettyTrading />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="*" element={<Home onOpenPayment={handleBooking} onOpenBooking={setSelectedTier} />} />

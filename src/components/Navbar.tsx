@@ -93,6 +93,14 @@ export default function Navbar({
                         </span>
                         <span className="block text-xs text-zinc-500 dark:text-zinc-400">Sheets Management · In development</span>
                       </Link>
+                      <Link
+                        to="/products/mypettytrading"
+                        onClick={() => setProdOpen(false)}
+                        className="block px-4 py-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                      >
+                        <span className="block text-sm font-semibold text-zinc-900 dark:text-white">MyPettyTrading</span>
+                        <span className="block text-xs text-zinc-500 dark:text-zinc-400">Android Pocket Bookkeeper · Available</span>
+                      </Link>
                     </div>
                   </motion.div>
                 )}
@@ -166,6 +174,9 @@ export default function Navbar({
               </Link>
               <Link to="/products/dsms" onClick={() => setMobileOpen(false)} className="text-base text-zinc-600 dark:text-zinc-300 pl-4 py-2 border-b border-zinc-200 dark:border-zinc-800">
                 DSMS — Coming Soon
+              </Link>
+              <Link to="/products/mypettytrading" onClick={() => setMobileOpen(false)} className="text-base text-zinc-600 dark:text-zinc-300 pl-4 py-2 border-b border-zinc-200 dark:border-zinc-800">
+                MyPettyTrading — Available
               </Link>
               <Link to="/partners" onClick={() => setMobileOpen(false)} className="text-lg font-medium text-zinc-800 dark:text-zinc-200 py-3 border-b border-zinc-200 dark:border-zinc-800">
                 Our Partners
