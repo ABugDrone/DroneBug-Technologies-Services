@@ -52,6 +52,8 @@ const FEATURES = [
   },
 ];
 
+const GET_APP_URL = 'https://wa.me/p/29123150204001326/2347037716349';
+
 export default function MyPettyTrading() {
   useEffect(() => {
     document.title = 'MyPettyTrading — Offline Pocket Bookkeeper | DroneBug';
@@ -99,12 +101,12 @@ export default function MyPettyTrading() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={GET_APP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full hover:shadow-lg hover:shadow-emerald-500/25 transition-all active:scale-[0.97]"
               >
-                Ask about MyPettyTrading
+                Get MyPettyTrading
               </a>
               <Link
                 to={MYPETTYTRADING_META.privacyUrl}
@@ -113,6 +115,9 @@ export default function MyPettyTrading() {
                 Privacy Policy
               </Link>
             </div>
+            <p className="mt-4 text-xs text-zinc-400 dark:text-zinc-500">
+              Currently an offline Android-only version. Leave a message about the app and we'll get back to you.
+            </p>
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center">
@@ -217,12 +222,12 @@ export default function MyPettyTrading() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={GET_APP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-lg hover:shadow-sky-500/25 transition-all active:scale-[0.97]"
               >
-                WhatsApp Support
+                Get MyPettyTrading
               </a>
               <a
                 href={`mailto:${MYPETTYTRADING_META.supportEmail}`}
@@ -231,6 +236,9 @@ export default function MyPettyTrading() {
                 Email Support
               </a>
             </div>
+            <p className="mt-4 text-xs text-zinc-400 dark:text-zinc-500">
+              Currently an offline Android-only version. Leave a message about the app and we'll get back to you.
+            </p>
           </motion.div>
         </div>
       </div>
