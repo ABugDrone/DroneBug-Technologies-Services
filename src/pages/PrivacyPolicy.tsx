@@ -36,7 +36,7 @@ const SECTIONS = [
     id: 'advertising',
     title: '3. Advertising (Google AdMob & Consent Management)',
     paragraphs: [
-      'When your device is connected to the internet, MyPettyTrading uses Google AdMob (a service provided by Google LLC) to display advertisements (such as banner and interstitial ads).',
+      'When your device is connected to the internet, MyPettyTrading uses Google AdMob (a service provided by Google LLC, via the play-services-ads Android SDK) to display advertisements (such as banner and interstitial ads), and Google UMP (User Messaging Platform) to request and manage your consent choices.',
       'To serve ads, measure ad performance, prevent fraud, and support personalized or non-personalized advertising based on your region and consent choices, Google AdMob and its certified ad technology partners may automatically collect and process:',
     ],
     bullets: [
@@ -53,7 +53,7 @@ const SECTIONS = [
       {
         title: 'Managing Ad Consent & Opt-Out Choices',
         bullets: [
-          'EEA, UK, and Switzerland Users (GDPR): When required by law, the App displays a Google-certified consent prompt before loading personalized ads, allowing you to Consent, Do not consent, or Manage options for advertising partners.',
+          'EEA, UK, and Switzerland Users (GDPR): When required by law, the App displays a Google UMP (User Messaging Platform) consent prompt before loading personalized ads, allowing you to Consent, Do not consent, or Manage options for advertising partners.',
           'Android System Controls: You can reset or delete your Advertising ID or opt out of personalized ads anytime in your Android device settings (Settings → Privacy / Google → Ads).',
         ],
       },
@@ -70,6 +70,7 @@ const SECTIONS = [
       'Advertising ID (AD_ID): Used by Google Mobile Ads SDK for ad serving, frequency capping, and fraud prevention in accordance with your consent settings.',
       'Local Wi-Fi & Multicast (ACCESS_WIFI_STATE, CHANGE_WIFI_MULTICAST_STATE): Used solely when you enable and run offline local Hotspot/Wi-Fi multi-staff synchronization.',
       'Notifications (POST_NOTIFICATIONS): Used locally on your device to alert you when inventory drops to low or negative stock levels.',
+      'No Location or Broad Storage Permissions: MyPettyTrading does not request device location access or broad external-storage read/write permissions. File backups and exports use the Android system file picker, which grants access only to the specific file you choose.',
     ],
   },
   {
@@ -141,7 +142,7 @@ export default function PrivacyPolicy() {
                 Privacy Policy
               </h1>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-2xl">
-                This Privacy Policy explains how information is handled when you use MyPettyTrading on Android. Effective Date: November 17, 2026.
+                This Privacy Policy explains how information is handled when you use MyPettyTrading on Android. Effective Date and Last Updated: November 17, 2026.
               </p>
             </div>
           </div>
