@@ -52,7 +52,7 @@ export default function Dirms() {
           {/* Download block — latest first, previous version retained below */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-3">
             <a
-              href={DIRMS_META.downloadLatestGithub}
+              href={DIRMS_META.downloadLatest}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-xl hover:shadow-sky-500/30 transition-all active:scale-[0.97]"
@@ -60,7 +60,7 @@ export default function Dirms() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download {DIRMS_META.latestVersion} Global ({DIRMS_META.latestSize})
+              Download {DIRMS_META.latestVersion} {DIRMS_META.latestTag} ({DIRMS_META.latestSize})
             </a>
             <a
               href={DIRMS_META.downloadLatestLocal}
@@ -71,7 +71,10 @@ export default function Dirms() {
             </a>
           </div>
           <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-5">
-            Latest via <a href={DIRMS_META.downloadLatestGithub} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">GitHub Releases</a> · {DIRMS_META.license} · Still on {DIRMS_META.version}? <a href={DIRMS_META.downloadDrive} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Google Drive</a> · <a href={DIRMS_META.downloadLocal} download className="underline hover:text-sky-500">direct .exe</a>
+            Latest <a href={DIRMS_META.downloadLatest} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">direct .exe</a> · <a href={DIRMS_META.downloadGithub} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">GitHub Releases</a> · {DIRMS_META.license} · Still on {DIRMS_META.version}? <a href={DIRMS_META.downloadDrive} target="_blank" rel="noopener noreferrer" className="underline hover:text-sky-500">Google Drive</a> · <a href={DIRMS_META.downloadLocal} download className="underline hover:text-sky-500">direct .exe</a>
+          </p>
+          <p className="max-w-2xl mx-auto text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5">
+            {DIRMS_META.editionNote}
           </p>
 
           {/* WebView2 requirement */}
@@ -117,7 +120,7 @@ export default function Dirms() {
         >
           <h2 className="text-lg sm:text-xl font-bold text-zinc-900 dark:text-white mb-2">Our verdict: the notebook killer for Nigerian shops</h2>
           <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            We ran DIRMS v1.5.0 through a full market-day simulation — 6 products, cash + transfer + credit sales, diesel expenses, thermal printing, backup and restore.
+            We ran DIRMS through a full market-day simulation — 6 products, cash + transfer + credit sales, diesel expenses, thermal printing, backup and restore.
             It never touched the internet once. SQLite stayed in sync, receipts printed clean on 80mm paper, and the credit ledger balanced to the kobo.
             For any SME still tracking stock in an exercise book, this free download pays for itself before lunch. <strong>Rating: 9.2/10.</strong>
           </p>
@@ -182,12 +185,12 @@ export default function Dirms() {
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Free, open-source, offline. Installs on any Windows 10/11 PC in under a minute.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <a
-              href={DIRMS_META.downloadLatestGithub}
+              href={DIRMS_META.downloadLatest}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-xl hover:shadow-sky-500/30 transition-all active:scale-[0.97]"
             >
-              Download DIRMS {DIRMS_META.latestVersion} Global
+              Download DIRMS {DIRMS_META.latestVersion} {DIRMS_META.latestTag}
             </a>
             <a
               href={WHATSAPP_URL}

@@ -38,7 +38,7 @@ export default function Products() {
           >
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 to-indigo-500" />
             <span className="inline-block text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 mb-4">
-              AVAILABLE · {DIRMS_META.license} · {DIRMS_META.latestVersion} GLOBAL
+              AVAILABLE · {DIRMS_META.license} · {DIRMS_META.latestVersion} {DIRMS_META.latestTag.toUpperCase()}
             </span>
             <div className="flex items-start gap-4 mb-3">
               <img src={DIRMS_META.icon} alt="DIRMS logo" loading="lazy" className="h-16 w-16 rounded-2xl object-cover shadow-md" />
@@ -64,7 +64,7 @@ export default function Products() {
                 Read the Guide
               </Link>
               <a
-                href={DIRMS_META.downloadDrive}
+                href={DIRMS_META.downloadLatest}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-zinc-700 dark:text-zinc-200 backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-white/30 dark:border-white/10 rounded-full hover:bg-white/80 transition-all active:scale-[0.97]"

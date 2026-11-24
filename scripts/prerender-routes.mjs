@@ -21,9 +21,9 @@ const routes = {
     imageAlt: 'DroneBug Technologies — SMEDAN 2026 Rebranded Logo',
   },
   'products/dirms': {
-    title: 'DIRMS v1.6.0 Global — Inventory & Records Management | DroneBug',
+    title: 'DIRMS v2.1.0 Storebox — Inventory & Records Management | DroneBug',
     description:
-      'DIRMS v1.6.0 Global: offline-first POS, inventory & records with global currency selection and clock-tamper guard. Free download for Windows.',
+      'DIRMS v2.1.0 Storebox: offline-first POS, inventory & records with discount and coupon sales, global currency selection and clock-tamper guard. Free download for Windows.',
     image: `${site}/og-dirms.png`,
     imageWidth: '1600',
     imageHeight: '1600',

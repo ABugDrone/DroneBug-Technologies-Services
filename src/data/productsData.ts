@@ -46,9 +46,9 @@ export const DIRMS_META = {
   name: 'DroneBug Inventory and Records Management System',
   shortName: 'DIRMS',
   version: 'v1.5.0',
-  latestVersion: 'v1.6.0',
-  latestTag: 'Global version',
-  latestSize: '~3 MB',
+  latestVersion: 'v2.1.0',
+  latestTag: 'Storebox',
+  latestSize: '~5.4 MB',
   tagline: 'Offline-first POS, inventory & records for Nigerian SMEs.',
   icon: dirmsIcon,
   description:
@@ -58,9 +58,11 @@ export const DIRMS_META = {
   downloadGithub:
     'https://github.com/ABugDrone/DroneBug-Technologies-Services/releases',
   downloadLocal: '/downloads/DIRMS_1.5.0_x64-setup.exe',
-  downloadLatestGithub:
-    'https://github.com/ABugDrone/DroneBug-Technologies-Services/releases',
-  downloadLatestLocal: '/downloads/DIRMS_1.6.0_x64-setup.exe',
+  downloadLatest:
+    'https://raw.githubusercontent.com/ABugDrone/joainas-supermarket-pos/main/bundle/DIRMS%20Storebox_2.1.0_x64-setup.exe',
+  downloadLatestLocal: '/downloads/DIRMS_2.1.0_x64-setup.exe',
+  editionNote:
+    'v2.1.0 is the free/open-source Storebox edition: POS, inventory, sales, customers, expenses, hardware config, backups and fully customizable receipts. Financial Records, Analytics, most Admin features and extra themes require the PRO or customized version.',
   webview2Url: 'https://go.microsoft.com/fwlink/p/?LinkId=2124703',
   webview2OfflineUrl:
     'https://developer.microsoft.com/microsoft-edge/webview2/?form=MA13LH',
@@ -168,8 +170,8 @@ export const DIRMS_FEATURES: DirmsFeature[] = [
     module: 'Admin · Global',
     shortcut: 'F9',
     title: 'Global Currency + Clock-Tamper Guard',
-    body: 'v1.6.0 goes global: the new Store Currency panel lets each shop trade in its own local currency — prices, receipts and reports follow the selection while old records keep their original currency. A new system-clock tampering alert watches the PC clock so backdated entries can never silently corrupt your sales records.',
-    bullets: ['Shop currency selector (NGN default)', 'Old records keep original currency', 'Clock-tamper alert protects sales integrity', 'New Reports & Analytics modules'],
+    body: 'Introduced in v1.6.0 and carried forward: the Store Currency panel lets each shop trade in its own local currency — prices, receipts and reports follow the selection while old records keep their original currency. A system-clock tampering alert watches the PC clock so backdated entries can never silently corrupt your sales records.',
+    bullets: ['Shop currency selector (NGN default)', 'Old records keep original currency', 'Clock-tamper alert protects sales integrity', 'Reports & Analytics available with PRO'],
     image: dirms11,
   },
 ];

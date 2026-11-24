@@ -107,7 +107,7 @@ export default function Documentation() {
               Start with setup
             </a>
             <a
-              href={DIRMS_META.downloadLatestGithub}
+              href={DIRMS_META.downloadLatest}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-zinc-700 dark:text-zinc-200 backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-white/30 dark:border-white/10 rounded-full hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all active:scale-[0.97]"
@@ -402,7 +402,7 @@ export default function Documentation() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
-                  href={DIRMS_META.downloadLatestGithub}
+                  href={DIRMS_META.downloadLatest}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full hover:shadow-xl hover:shadow-sky-500/30 transition-all active:scale-[0.97]"

@@ -51,7 +51,7 @@ export const DOCS_META = {
   eyebrow: 'Documentation',
   intro:
     'A plain-language guide to DroneBug Inventory and Records Management System. Install it, add your stock, make a sale, and keep records you can trust — no internet needed.',
-  version: 'DIRMS v1.6.0 Global',
+  version: 'DIRMS v2.1.0 Storebox',
   updated: 'November 2026',
   readTime: '10 min read',
 };
